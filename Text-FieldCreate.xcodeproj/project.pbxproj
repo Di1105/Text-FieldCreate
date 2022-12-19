@@ -9,17 +9,18 @@
 /* Begin PBXBuildFile section */
 		C698BE4F2950540100E13C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BE4E2950540100E13C9B /* AppDelegate.swift */; };
 		C698BE512950540100E13C9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BE502950540100E13C9B /* SceneDelegate.swift */; };
-		C698BE532950540100E13C9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BE522950540100E13C9B /* ViewController.swift */; };
+		C698BE532950540100E13C9B /* TextFieldCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BE522950540100E13C9B /* TextFieldCreate.swift */; };
 		C698BE562950540100E13C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C698BE542950540100E13C9B /* Main.storyboard */; };
 		C698BE582950540400E13C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C698BE572950540400E13C9B /* Assets.xcassets */; };
 		C698BE5B2950540400E13C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C698BE592950540400E13C9B /* LaunchScreen.storyboard */; };
+		C698BE64295054DA00E13C9B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C698BE63295054DA00E13C9B /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C698BE4B2950540100E13C9B /* Text-FieldCreate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text-FieldCreate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C698BE4E2950540100E13C9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C698BE502950540100E13C9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C698BE522950540100E13C9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C698BE522950540100E13C9B /* TextFieldCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCreate.swift; sourceTree = "<group>"; };
 		C698BE552950540100E13C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C698BE572950540400E13C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C698BE5A2950540400E13C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C698BE64295054DA00E13C9B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +60,7 @@
 			children = (
 				C698BE4E2950540100E13C9B /* AppDelegate.swift */,
 				C698BE502950540100E13C9B /* SceneDelegate.swift */,
-				C698BE522950540100E13C9B /* ViewController.swift */,
+				C698BE522950540100E13C9B /* TextFieldCreate.swift */,
 				C698BE542950540100E13C9B /* Main.storyboard */,
 				C698BE572950540400E13C9B /* Assets.xcassets */,
 				C698BE592950540400E13C9B /* LaunchScreen.storyboard */,
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Text-FieldCreate";
+			packageProductDependencies = (
+				C698BE63295054DA00E13C9B /* SnapKit */,
+			);
 			productName = "Text-FieldCreate";
 			productReference = C698BE4B2950540100E13C9B /* Text-FieldCreate.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C698BE422950540100E13C9B;
+			packageReferences = (
+				C698BE62295054DA00E13C9B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C698BE4C2950540100E13C9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C698BE532950540100E13C9B /* ViewController.swift in Sources */,
+				C698BE532950540100E13C9B /* TextFieldCreate.swift in Sources */,
 				C698BE4F2950540100E13C9B /* AppDelegate.swift in Sources */,
 				C698BE512950540100E13C9B /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C698BE62295054DA00E13C9B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C698BE63295054DA00E13C9B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C698BE62295054DA00E13C9B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C698BE432950540100E13C9B /* Project object */;
 }
